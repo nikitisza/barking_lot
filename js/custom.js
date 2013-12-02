@@ -18,7 +18,7 @@ $(document).ready(function() {
         $.get('niki.txt', function(x) {$("#result").html(x);});
     })
 
-    $("#tour").on("click", "button", function() {
+    $("#doggies").on("click", "button", function() {
         $(".photos").slideToggle();
     });
 });
