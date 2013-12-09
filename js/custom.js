@@ -5,4 +5,12 @@ $(document).ready(function() {
 
     var numberOfItems = $("#holiday li").length;
     console.log(numberOfItems);
+
+    $(".book").on('click', function() {
+         var message = $("<span>Better call Saul!</span>");
+            $(this).after(message);
+            $("body").css("background-color", "red");
+            $(this).remove();
+        }
+    )
 });
