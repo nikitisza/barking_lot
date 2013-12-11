@@ -9,8 +9,16 @@ $(document).ready(function() {
     $(".book").on('click', function() {
          var message = $("<span>Better call Saul!</span>");
             $(this).after(message);
-            $("body").css("background-color", "red");
+            //$("body").css("background-color", "red");
             $(this).remove();
         }
     )
+
+    $("#read").on('click', function() {
+        $.get('niki.txt', function(x) {$("#result").html(x);});
+    })
+
+    $("#tour").on("click", "button", function() {
+        $(".photos").slideToggle();
+    });
 });
